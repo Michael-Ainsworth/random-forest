@@ -31,8 +31,8 @@ def binary_deep_neural_network(X_train, y_train, epochs, batch_size,
                                 ):
 
     dnn_model = Sequential()
-
-    dnn_model.add(Dense(8, activation = 'relu'))
+#X_train.shape[1]
+    dnn_model.add(Dense(20, activation = 'relu'))
     dnn_model.add(Dense(8, activation = 'relu'))
     dnn_model.add(Dense(units = 1, activation = 'sigmoid'))
 
